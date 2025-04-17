@@ -1,1 +1,202 @@
-/* место для вашего кода */
+* {
+    box-sizing: border-box;
+}
+
+.header {
+    display: grid;
+    grid-template-columns:1fr min-content 1fr;
+    align-items: center;
+    padding: 115px 50px 94px 50px;;
+}
+
+.header__links-list {
+    display: flex;
+    flex-direction: row;
+    gap: 28.9px;  
+}
+
+.header__links-list-item {
+    font-family: 'Raleway', sans-serif ;
+    font-size: 18px;
+    font-weight: 400;
+    list-style: circle;
+    text-underline-offset: 3px;
+}
+
+.header__links-list-item_no-bullit {
+    list-style: none;
+    font-family: 'Raleway', sans-serif;
+    font-size: 18px;
+    font-weight: 400;
+}
+
+.header__logo{
+    display: block;
+    width: 136px;
+    justify-self: center;
+    align-self: center;
+    max-width: 100%;
+    height: auto;   
+}
+
+.header__links-list {
+    display: flex;
+    flex-direction: row;
+    gap: 28.9px;
+}
+
+.header__links-list-item {
+    font-family: 'Raleway', sans-serif ;
+    font-size: 18px;
+    font-weight: 400;
+    list-style: circle;
+    padding-left: 4px;
+    padding-bottom: 3px;
+    text-underline-offset: 4px;
+}
+
+.header__links-list-item_no-bullit {
+    list-style: none;
+    font-family: 'Raleway', sans-serif;
+    font-size: 18px;
+    font-weight: 400;
+}
+
+.header__logo{
+    display: block;
+    width: 136px;
+    justify-self: center;
+    align-self: center;
+    max-width: 100%;
+    height: auto;   
+}
+
+
+.address {
+    max-width: 240px;
+    justify-self: end;
+    padding-right: 50px;
+    padding-bottom: 2px;
+    font-style: normal;
+    font-family: 'Raleway', sans-serif;
+    font-size: 18px;
+
+  
+}
+.header__address {
+    width: 100%;
+    font-style: normal;
+    font-weight: 400;
+    white-space: nowrap;
+    line-height: 1.37;
+    text-underline-offset: 3px;
+    
+}
+.main {
+ 
+
+}
+
+.cover {
+    display: grid;
+    grid-template-areas:
+      "cover__title"
+      "cover__description";
+    grid-template-rows : auto auto;
+    position: relative;
+    height: 757px;
+    background-image: url('../images/cover.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    color: white;
+    text-transform: uppercase; 
+    
+    
+}
+
+.overlay {
+    position: absolute;
+    background-color: rgba(0, 0, 0 , 0.6);
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+}
+
+.cover__title {
+    display: grid;
+    padding: 165px 20px 207px 50px;
+    height: 358px;
+    grid-area: cover__title;
+    grid-template-rows: auto auto auto;
+    font-weight: 700;
+    letter-spacing: 0.3em;
+    font-size: 100px;
+    gap: 17.2px;
+    grid-template-areas:
+    "aligned-text"
+    "aligned-text_center"
+    "aligned-text_right";
+    z-index: 2;
+    
+}
+
+.aligned-text {
+    grid-area: aligned-text;
+}
+
+.aligned-text_center {
+    grid-area: aligned-text_center;
+    justify-self: center;
+}
+
+.aligned-text_right {
+    grid-area: aligned-text_right;
+    justify-self: end ;
+}
+
+.cover__description{
+    display: grid;
+    grid-template-columns: auto auto;
+    align-items: end;
+    justify-content: space-between;
+    padding-left: 50px;
+    padding-right: 50px;
+    position: relative;
+    font-weight: 400;
+    font-size: 22px;
+    z-index: 2;
+}
+
+.cover__description-text {
+  align-content: end;
+  word-spacing: 18.4px;
+  margin-bottom: 62px;
+}
+
+.bet-button {
+  border: 1px solid white;
+  background-color: transparent;
+  text-transform: uppercase; 
+  color: white;
+  height: 51px ;
+  width: 256px; 
+  margin-bottom: 50px;
+  
+
+  
+
+}
+
+.lots {
+
+}
+
+.about {
+
+}
+
+.footer{
+
+}
+
