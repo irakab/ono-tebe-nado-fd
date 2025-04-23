@@ -13,27 +13,29 @@
    <header class="header">
     <nav class="header_menu">   
       <ul class="header__links-list">
-        <li class=" header__links-list-item header__links-list-item_no-bullit"><a 
-          class="menu__active-link"
+        <li class="header__links-list-item header__links-list-item_no-bullit"><a 
+          class="header__link header__link_active"
           href="#0">главная</a></li>
-        <li class="header__links-list-item"><a 
+        <li class="header__links-list-item"><a
+          class="header__link" 
           href="#0">посмотреть лоты</a></li>
         <li class="header__links-list-item"><a
+          class="header__link"
           href="#0">об аукционе</a></li>
       </ul>
     </nav> 
-    <a class="header__logo" href="#0"> 
+    <a class="header__logo"> 
       <img 
         class="header__logo-image"
         src="./images/logo-black.svg"
         alt="логотип черный"
         ></a>  
     <address class="address header__address"> 
-      <span>
-        <a href="tel:+99995555555">+9 999 555 5555</a><br>
-        <a href="mailto:info@sobaka.ge">info@sobaka.ge</a><br>
+        <a href="tel:+99995555555"
+          class='header__link'>+9 999 555 5555</a><br>
+        <a href="mailto:info@sobaka.ge" 
+          class='header__link'>info@sobaka.ge</a><br>
         наб. Принсенграхт 263-<br>265, Амстердам
-      </span>
     </address> 
    </header>
    <main class="main">
@@ -51,9 +53,7 @@
     </section>
     <section class="lots"> 
       <h2 class="lots__heading">Лоты</h2>
-      
       <ul class="lots__card-list">
-        
         <li class="lots__card-list-item card_type_film">
           <div class="overlay"></div>
           <a
@@ -90,8 +90,7 @@
               </p>
             </article>
           </a>
-          
-      </li>
+       </li>
       </ul>
       <a
       class="lots__look-more-link"
@@ -105,29 +104,31 @@
           src="./images/logo-white.svg"
           alt="Белый логотип на фоне черного круга">
       </div>
-      <div class="about__column">
+      <article class="about__column">
         <h2 class="about__title">Об аукционе</h2>
         <div class="about__text">
-          <p class="first__paragraph">Здесь вы не встретите очередное пафосное собрание невероятно дорогого антиквариата. Наши лоты вообще не должны были попасть ни&nbsp;на один аукцион. Потому что кому нужен дневник девочки-подростка или картина, которую может нарисовать даже ребёнок? Кому нужны все эти странные вещи, созданные любителями?
+          <p>Здесь вы не встретите очередное пафосное собрание невероятно дорогого антиквариата. Наши лоты вообще не должны были попасть ни&nbsp;на один аукцион. Потому что кому нужен дневник девочки-подростка или картина, которую может нарисовать даже ребёнок? Кому нужны все эти странные вещи, созданные любителями?
           </p>
           <p>Слишком сложные или, наоборот, слишком простые. Опережающие своё время. В пух и прах растерзанные критиками. Непринятые и непонятые. Когда-то они казались просто неудачными. Но, несмотря
         на&nbsp;критику, кажущуюся простоту или сложность, сейчас без этих лотов невозможно представить современную культуру. Когда в эти вещи не верил никто, продолжали верить их создатели. И сейчас эти лоты стали культовыми. 
           </p>
         </div>
-      </div>
+      </article>
     </section>
    </main>
    <footer class="footer">
       <address class="address footer__address">
-        <a href="tel:+99995555555">+9 999 555 5555</a><br>
-        <a href="mailto:mail@example.com">info@sobaka.ge</a><br>
+        <a href="tel:+99995555555"
+          class="footer__menu-link">+9 999 555 5555</a><br>
+        <a href="mailto:mail@example.com"
+        class="footer__menu-link">info@sobaka.ge</a><br>
         наб. Принсенграхт 263-265,<br> Амстердам
       </address>
       <nav class="footer__menu"> 
         <ul class="footer__menu-list ">
           <li class="footer__menu-list-item">
             <a 
-              class="footer__menu-link_active"
+              class="footer__menu-link footer__menu-link_active"
               href="#0">главная</a></li>
           <li class="footer__menu-list-item">
             <a 
@@ -142,19 +143,22 @@
       <ul class="footer__social-list">
         <li class="footer__social-list-item">
           <a class="footer__social-link"
-             href="#0">
+             href="#0"
+             target="_blank">
             <img class="footer__social-icon"
               src="./images/yt.svg"
               alt="логотип ютюб"></a></li>
         <li class="footer__social-list-item">
           <a class="footer__social-link"
-             href="#0">
+             href="#0"
+             target="_blank">
             <img class="footer__social-icon"
               src="./images/vk.svg"
               alt="логотип вконтакте"></a></li>
         <li class="footer__social-list-item">
           <a class="footer__social-link"
-             href="#0">
+             href="#0" 
+             target="_blank">
             <img class="footer__social-icon"
               src="./images/pinterest.svg"
               alt="логотип пинтерест"></a></li>
