@@ -1,15 +1,28 @@
-
+.overlay {
+    position: absolute;
+    background-color: rgba(0, 0, 0 , 0.6);
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+}
 
 .header {
     display: grid;
     grid-template-columns:1fr min-content 1fr;
     align-items: center;
-    padding: 92px 50px 92px 50px;
+    height: 293px;
+    padding-top: 91px;
+    padding-left: 50px;
+    padding-right: 50px;
+    padding-bottom: 93px;
+    font-weight: 400;
+    font-size: 18px;
+   
 }
 
 .header__logo {
     display: block;
-    width: 136px;
+    width: 136px;  /* ширина как в макете 148px слишком велика */
     justify-self: center;
     align-self: center;
     max-width: 100%;
@@ -19,50 +32,38 @@
 .header__links-list {
     display: flex;
     flex-direction: row;
-    gap: 28.9px;
+    gap: 29px;
 }
 
 .header__links-list-item {
-    font-family: 'Raleway', sans-serif ;
-    font-size: 18px;
-    font-weight: 400;
     list-style: circle;
-    padding-left: 3.5px;
     padding-bottom: 3px;
-    text-underline-offset: 3px;
-  
+    text-underline-offset: 4px; 
+    padding-left: 2px;  
 }
 
 .header__links-list-item_no-bullit {
-    list-style: none;
-    font-family: 'Raleway', sans-serif;
-    font-size: 18px;
-    font-weight: 400;
+    list-style: none;   
+}
+
+.menu__active-link {
+    text-decoration: none;
 }
 
 .address {
-    max-width: 240px;
-    justify-self: end;
-    padding-right: 50px;
-    padding-bottom: 3px;
+    display: block;
+    min-width: 240px;
     font-style: normal;
-    font-family: 'Raleway', sans-serif;
-    font-size: 18px;
-
-  
+    text-underline-offset: 3px;
+    line-height: 24.3px;
+    justify-self: end;
 }
+
 .header__address {
     width: 100%;
-    font-style: normal;
-    font-weight: 400;
     white-space: nowrap;
-    line-height: 1.37;
-    text-underline-offset: 3px;
-    
-}
-.main {
- 
-
+    padding-left:192px;
+    padding-bottom: 1px;
 }
 
 .cover {
@@ -79,15 +80,6 @@
     background-position: center;
     color: white;
     text-transform: uppercase; 
-    
-}
-
-.overlay {
-    position: absolute;
-    background-color: rgba(0, 0, 0 , 0.6);
-    width: 100%;
-    height: 100%;
-    z-index: 1;
 }
 
 .cover__title {
@@ -105,7 +97,6 @@
     "aligned-text_center"
     "aligned-text_right";
     z-index: 2;
-    
 }
 
 .aligned-text {
@@ -212,6 +203,8 @@
     line-height: 120%;
     text-transform: uppercase;
     text-decoration: underline;
+    text-underline-offset: 3px;
+    text-decoration-thickness: 1px;
     padding: 48px 40px 0 40px;
     z-index: 2;
 }
@@ -246,11 +239,107 @@
     padding-left: 40px;
     padding-top: 30px;
 }
-.about {
 
+.about { 
+    display: grid;
+    grid-template-columns: 334px 1fr;
+    min-height: 595px;
+    padding-top: 120px;
+    margin-right: 24px;
+    margin-left: 24px;
+    gap: 24px;
 }
 
-.footer{
-
+.about__logo {
+    display: flex;
+    justify-content: center;
+    justify-self: center;
+    align-items: center;
+    height: 240px;
+    width: 240px;
+    background-color: black;
+    border-radius: 50%;
+    margin-top: 35px;
 }
+
+.about__logo-image {
+    width: 62%;
+    padding-top:4px;
+}
+
+.about__column{
+  display: flex;
+  flex-direction: column;
+  margin-top: 137px;
+}
+
+.about__title {
+    font-weight: 700;
+    font-size: 40px;
+    text-transform: uppercase;
+    padding-bottom: 100px;
+}
+
+.about__text {
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 24px;
+}
+
+.first__paragraph {
+    padding-bottom: 24px;
+}
+
+.footer {       
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    align-items: start;
+    margin-top: 180px;
+    height: 180px;
+    font-weight: 400;
+    font-size: 18px;
+}
+
+.footer__address {
+    justify-self: start;
+    min-width: 264.7px;
+    max-height: 121px;
+    padding-left: 50px;
+}
+
+.footer__menu-list {   /* блок со списком меню */
+    display: flex;
+    flex-direction: column;
+    justify-self: center;
+    text-align: center;
+    padding-bottom: 115px;
+    padding-top: 1px;
+}
+
+.footer__menu-list-item {    /* пункт меню */
+    list-style: none;
+    text-underline-offset: 4px; 
+}
+
+.footer__menu-link_active {  
+    text-decoration: none;
+}
+
+.footer__social-list {   /* список иконок соцсетей */
+    display: flex;
+    justify-content: space-between;
+    justify-self: end;
+    gap: 48px;
+    list-style: none;
+    padding-right: 50px;
+    padding-top: 1px;
+    padding-bottom: 131px;
+}
+
+.footer__social-icon {
+    height: 48px;
+}
+
+
+
 
