@@ -17,7 +17,6 @@
     padding-bottom: 93px;
     font-weight: 400;
     font-size: 18px;
-   
 }
 
 .header__logo {
@@ -26,7 +25,7 @@
     justify-self: center;
     align-self: center;
     max-width: 100%;
-    height: auto;   
+    height: auto;
 }
 
 .header__links-list {
@@ -38,8 +37,8 @@
 .header__links-list-item {
     list-style: circle;
     padding-bottom: 3px;
-    text-underline-offset: 4px; 
-    padding-left: 2px;  
+    text-underline-offset: 4px;
+    padding-left: 2px;
 }
 
 .header__links-list-item_no-bullit {
@@ -79,7 +78,7 @@
     background-repeat: no-repeat;
     background-position: center;
     color: white;
-    text-transform: uppercase; 
+    text-transform: uppercase;
 }
 
 .cover__title {
@@ -93,9 +92,9 @@
     font-size: 100px;
     gap: 17.2px;
     grid-template-areas:
-    "aligned-text"
-    "aligned-text_center"
-    "aligned-text_right";
+      "aligned-text"
+      "aligned-text_center"
+      "aligned-text_right";
     z-index: 2;
 }
 
@@ -140,7 +139,6 @@
   height: 51px ;
   width: 256px; 
   margin-bottom: 50px;
-
 }
 
 .lots {                           /* блок lots */
@@ -158,7 +156,7 @@
     text-transform: uppercase; 
     font-size: 40px;
     padding-left: 40px;
-    padding-bottom: 27px;   
+    padding-bottom: 27px;
 }
 
 .lots__card-list {           /* список карточек */
@@ -179,8 +177,7 @@
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
-    position: relative; 
-   
+    position: relative;
 }
 
 .card-link {
@@ -228,7 +225,7 @@
 }
 
 .card_type_picture {
-    background-image: url('../images/card-lot-03.jpg');  
+    background-image: url('../images/card-lot-03.jpg');
 }
 
 .lots__look-more-link {        /*ccылка посмотреть больше*/
@@ -318,7 +315,7 @@
 
 .footer__menu-list-item {    /* пункт меню */
     list-style: none;
-    text-underline-offset: 4px; 
+    text-underline-offset: 4px;
 }
 
 .footer__menu-link_active {  
@@ -339,6 +336,10 @@
 .footer__social-icon {
     height: 48px;
 }
+
+
+
+
 
 
 
