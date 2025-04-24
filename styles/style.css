@@ -27,12 +27,12 @@
     list-style: none;
 }
 
-.header__link {
+.text__link_underlined {
     text-underline-offset: 4px;
     text-decoration-thickness: 1px;
 }
 
-.header__link_active {
+.link__active {
     text-decoration: none;
 }
 
@@ -297,7 +297,6 @@
     grid-template-columns: 1fr 1fr 1fr;
     align-items: start;
     margin-top: 180px;
-    height: 180px;
     font-family: Raleway, Arial, sans-serif;
     font-size: 18px;
 }
@@ -306,11 +305,6 @@
     justify-self: start;
     min-width: 264.7px;
     padding-left: 50px;
-}
-
-.footer__menu-link {
-    text-underline-offset: 4px;
-    text-decoration-thickness: 1px;
 }
 
 .footer__menu-list {
@@ -324,10 +318,6 @@
 
 .footer__menu-list-item {
     list-style: none;
-}
-
-.footer__menu-link_active {
-    text-decoration: none;
 }
 
 .footer__social-list {
